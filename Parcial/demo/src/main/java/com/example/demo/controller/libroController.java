@@ -45,7 +45,7 @@ public class libroController {
         return libroRepository.save(newlibro);
     }
 
-    @PutMapping("/update/{id}")
+    @PutMapping("/update")
     @CrossOrigin(origins = "http://localhost:4200")
     public void update(@RequestBody libro libro){
         libroRepository.save(libro);
