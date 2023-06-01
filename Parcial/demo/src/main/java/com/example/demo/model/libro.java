@@ -15,7 +15,7 @@ public class libro {
     Long id;
 
     private String titulo;
-    private Integer referencia;
+    private String referencia;
     private String autor;
     private Double precio;
     private String ubicacion;
@@ -26,7 +26,7 @@ public class libro {
     }
 
     
-    public libro(String titulo, Integer referencia, String autor, Double precio, String ubicacion) {
+    public libro(String titulo, String referencia, String autor, Double precio, String ubicacion) {
         super();
         this.titulo = titulo;
         this.referencia = referencia;
@@ -48,11 +48,11 @@ public class libro {
         this.titulo = titulo;
     }
 
-    public Integer getReferencia() {
+    public String getReferencia() {
         return referencia;
     }
 
-    public void setReferencia(Integer referencia) {
+    public void setReferencia(String referencia) {
         this.referencia = referencia;
     }
 
@@ -80,9 +80,9 @@ public class libro {
         this.ubicacion = ubicacion;
     }
 
-    public void setLibro(String titulo, Integer referencia, String autor, Double precio, String ubicacion) {
+    public void setLibro(String titulo, String ref, String autor, Double precio, String ubicacion) {
 		this.titulo = titulo;
-		this.referencia = referencia;
+		this.referencia = ref;
 		this.autor = autor;
 		this.precio = precio;
 		this.ubicacion = ubicacion;
