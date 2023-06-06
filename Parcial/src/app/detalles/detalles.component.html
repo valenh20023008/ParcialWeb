@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Detalles del Libro</title>
+  <link rel="stylesheet" type="text/css" href="detalles.component.css">
+</head>
+<body>
+  <h2>Detalles del Libro</h2>
+  <div class="book-details">
+    <div class="detail-row">
+      <label>Título:</label>
+      <span>{{ libro.titulo }}</span>
+    </div>
+    <div class="detail-row">
+      <label>Referencia:</label>
+      <span>{{ libro.referencia }}</span>
+    </div>
+    <div class="detail-row">
+      <label>Autor:</label>
+      <span>{{ libro.autor }}</span>
+    </div>
+    <div class="detail-row">
+      <label>Precio:</label>
+      <span>{{ libro.precio }}</span>
+    </div>
+    <div class="detail-row">
+      <label>Ubicación:</label>
+      <span>{{ libro.ubicacion }}</span>
+    </div>
+  </div>
+  <button value="Volver" (click)="volver()">Volver a la lista</button>
+</body>
+</html>
+

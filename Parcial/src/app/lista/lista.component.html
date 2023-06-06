@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Libros</title>
+  <link rel="stylesheet" type="text/css" href="lista.component.css">
+</head>
+<body>
+  <h2>Libros</h2>
+  <table class="book-table">
+    <thead>
+      <tr>
+        <th>Titulo</th>
+        <th>Autor</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let libro of libros">
+        <td >{{libro.titulo}}</td>
+        <td >{{libro.autor}}</td>
+        <td class="button-cell">
+          <button class="details-button" (click)="verDetalles(libro.titulo)">Detalles</button>
+          <button class="edit-button" (click)="editarLibro(libro.titulo)">Editar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+

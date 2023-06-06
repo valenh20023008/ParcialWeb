@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editar Libro</title>
+  <link rel="stylesheet" type="text/css" href="editar.component.css">
+</head>
+<body>
+  <h2>Editar Libro</h2>
+  <form>
+    <div class="form-row">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" [(ngModel)]="libro.titulo">
+    </div>
+    <div class="form-row">
+      <label for="referencia">Referencia:</label>
+      <input type="text" id="referencia" name="referencia" [(ngModel)]="libro.referencia">
+    </div>
+    <div class="form-row">
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" name="autor" [(ngModel)]="libro.autor">
+    </div>
+    <div class="form-row">
+      <label for="precio">Precio:</label>
+      <input type="number" step="0.01" id="precio" name="precio" [(ngModel)]="libro.precio">
+    </div>
+    <div class="form-row">
+      <label for="ubicacion">Ubicación:</label>
+      <input type="text" id="ubicacion" name="ubicacion" [(ngModel)]="libro.ubicacion">
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="submit-button" (click)="update()">Guardar</button>
+      <button class="cancel-button" routerLink="">Cancelar</button>
+    </div>
+  </form>
+</body>
+</html>
+
